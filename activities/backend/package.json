@@ -1,12 +1,12 @@
 {
-  "name": "weebdeevdos",
+  "name": "WSS2-2",
   "version": "1.0.0",
-  "description": "wdd2 scaffolding project",
+  "description": "Activity",
   "keywords": [
     "ciit"
   ],
   "license": "ISC",
-  "author": "riri",
+  "author": "bojo",
   "type": "module",
   "main": "index.js",
   "scripts": {
