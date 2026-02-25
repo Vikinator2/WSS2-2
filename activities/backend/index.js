@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import connectDB from "./config/db.js"; 
 import authRoutes from "./routes/authRoutes.js";
+import inventoryRoutes from "./routes/authRoutes.js";
 
 const app = express();
 const PORT = 3000;
@@ -15,6 +16,7 @@ app.use(cors({
 }),
 );
 app.use("/api/auth", authRoutes);
+app.use("/api/inventory", InventoryRoutes);
 
 app.listen(PORT, () => {
     connectDB();
