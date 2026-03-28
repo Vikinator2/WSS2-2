@@ -1,0 +1,78 @@
+/* Color Scheme */
+:root {
+    --primary-color: #4CAF50;
+    --primary-dark: #2E7D32;
+    --primary-light: #81C784;
+    --neutral-gray: #2c2c2c;
+    --accent-blue: #66BB6A;
+}
+
+/* Global Styles */
+body {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-blue) 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.navbar {
+    background-color: var(--primary-color) !important;
+    border-bottom: 3px solid var(--primary-dark);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-dark);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-color);
+}
+
+.card {
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+}
+
+/* Custom header */
+.custom-header {
+    background: linear-gradient(45deg, var(--primary-color), var(--primary-light));
+    color: var(--primary-dark);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* Custom elements */
+.custom-avatar {
+    width: 100px;
+    height: 100px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 3px solid white;
+}
+/* Custom buttons */
+.btn-custom {
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-blue));
+    color: var(--primary-dark);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
+}
+
+/* Custom cards */
+.custom-card {
+    background: var(--primary-dark);
+    border-radius: 15px;
+    border: 2px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+}
